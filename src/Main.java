@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
         System.out.println(" Задание 1");
@@ -10,7 +8,6 @@ public class Main {
         task3();
         System.out.println(" Задание 4");
         task4();
-        test();
     }
     public static void task1(){
         int clientOS = 3;
@@ -46,7 +43,7 @@ public class Main {
         }
     }
     public static void task4(){
-        int deliveryDistance = 99;
+        int deliveryDistance = 98;
         int deliveryTerm = 1;
         if (deliveryDistance <= 20){
             System.out.println("Потребуется дней: " + deliveryTerm);
