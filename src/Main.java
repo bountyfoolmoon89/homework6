@@ -8,6 +8,8 @@ public class Main {
         task3();
         System.out.println(" Задание 4");
         task4();
+        System.out.println(" Задание 5");
+        task5();
     }
     public static void task1(){
         int clientOS = 3;
@@ -23,9 +25,9 @@ public class Main {
         }
     }
     public static void task2(){
-        int year = 2021;
+        int year = 2014;
         boolean versionYear = year < 2015;
-        int clientOS = 0;
+        int clientOS = 1;
         boolean iOS = clientOS == 0;
         boolean android = clientOS == 1;
         if (versionYear && iOS){
@@ -45,16 +47,95 @@ public class Main {
     public static void task4(){
         int deliveryDistance = 98;
         int deliveryTerm = 1;
-        if (deliveryDistance <= 20){
-            System.out.println("Потребуется дней: " + deliveryTerm);
+
+        if (deliveryDistance >20){
+            deliveryTerm++;
         }
-        if ((deliveryDistance >20)&&(deliveryDistance <=60)){
-            deliveryTerm+=1;
-            System.out.println("Потребуется дней: " + deliveryTerm);
+        if (deliveryDistance >60){
+            deliveryTerm++;
         }
-        if ((deliveryDistance >60)&&(deliveryDistance <=100)){
-            deliveryTerm+=2;
-            System.out.println("Потребуется дней: " + deliveryTerm);
+        System.out.println("Потребуется дней: " + deliveryTerm);
+    }
+    public static void task5(){
+        int month = 11;
+        switch (month){
+            case 1:
+                System.out.println("January");
+                break;
+            case 2:
+                System.out.println("February");
+                break;
+            case 3:
+                System.out.println("March");
+                break;
+            case 4:
+                System.out.println("April");
+                break;
+            case 5:
+                System.out.println("May");
+                break;
+            case 6:
+                System.out.println("June");
+                break;
+            case 7:
+                System.out.println("July");
+                break;
+            case 8:
+                System.out.println("August");
+                break;
+            case 9:
+                System.out.println("September");
+                break;
+            case 10:
+                System.out.println("October");
+                break;
+            case 11:
+                System.out.println("November");
+                break;
+            case 12:
+                System.out.println("December");
+                break;
+            default:
+                System.out.println("This month doesn't exist");
+        }
+        switch (month) {
+            case 1:
+                System.out.println("Winter");
+                break;
+            case 2:
+                System.out.println("Winter");
+                break;
+            case 3:
+                System.out.println("Spring");
+                break;
+            case 4:
+                System.out.println("Spring");
+                break;
+            case 5:
+                System.out.println("Spring");
+                break;
+            case 6:
+                System.out.println("Summer");
+                break;
+            case 7:
+                System.out.println("Summer");
+                break;
+            case 8:
+                System.out.println("Summer");
+                break;
+            case 9:
+                System.out.println("Autumn");
+                break;
+            case 10:
+                System.out.println("Autumn");
+                break;
+            case 11:
+                System.out.println("Autumn");
+                break;
+            case 12:
+                System.out.println("Winter");
+            default:
+                System.out.println("This month doesn't exist");
         }
     }
 }
